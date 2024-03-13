@@ -111,7 +111,7 @@ header {
   background-color: var(--VeryPaleCyan);
   background-repeat: no-repeat;
   text-align: center;
-  padding: 1em;
+  padding: 1.8em;
   gap: 2em;
 }
 .head-1 {
@@ -193,7 +193,7 @@ h1 + p {
   padding-bottom: 5em;
 }
 .cards {
-  margin: 0em 1em;
+  margin: 0em 1.8em;
   padding: 3em 1em;
   border-radius: 1em;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -209,7 +209,7 @@ article {
   justify-content: center;
   position: absolute;
   margin: auto;
-  padding: 2em 1em;
+  padding: 2em 0.7em;
   border-radius: 1em;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
   background-color: white;
@@ -220,7 +220,7 @@ article {
 }
 footer {
   display: grid;
-  gap: 2.5em;
+  gap: 1em;
   background-color: var(--VeryDarkCyan);
   color: white;
   padding: 1.5em;
@@ -239,6 +239,7 @@ footer p {
 }
 .icons-container {
   display: grid;
+  padding: 2em 0em;
   gap: 1em;
 }
 ul li {
@@ -262,6 +263,7 @@ ul li {
   display: flex;
   justify-content: center;
   gap: 1em;
+  padding-top: 2em;
 }
 .social li {
   font-size: 18px;
@@ -336,6 +338,9 @@ a {
     grid-column: 2/3;
     grid-row: 1/2;
   }
+  article {
+    min-width: 500px;
+  }
   footer {
     display: grid;
     grid-template-columns: 35% 20% 20% 25%;
@@ -349,6 +354,7 @@ a {
   }
   .icons-container {
     grid-area: 2/1;
+    padding: 0;
   }
   .info-1 {
     grid-area: 2/2;
@@ -361,6 +367,7 @@ a {
   .social {
     grid-area: 2/4;
     justify-content: flex-start;
+    padding-top: 0;
   }
   .social + p {
     text-align: start;
